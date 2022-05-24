@@ -1,4 +1,5 @@
 import { hopeTheme } from "vuepress-theme-hope";
+const { gitPlugin } = require('@vuepress/plugin-git')
 import navbar from "./navbar";
 import sidebar from "./sidebar";
 
@@ -40,7 +41,9 @@ export default hopeTheme({
     blog: {
       autoExcerpt: false,
     },
-
+    git: {
+      contributors: false,
+    },
     mdEnhance: {
       enableAll: true,
       presentation: {
